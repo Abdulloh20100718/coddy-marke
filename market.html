@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coddy Market</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+      <div class="container header-content">
+          <div class="logo">
+              <h1>Coddy Market</h1>
+          </div>
+          <div class="search-bar">
+              <input type="text" id="search-input" placeholder="Mahsulotlarni qidirish...">
+              <button id="search-button"><i class="fas fa-search"></i></button>
+          </div>
+          <nav class="nav-icons">
+              <a href="#" class="nav-icon" id="favorites-link">
+                  <i class="fas fa-heart"></i>
+                  <span>Izbrannoe (<span id="favorites-count">0</span>)</span>
+              </a>
+              <a href="#" class="nav-icon" id="cart-link">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Savat (<span id="cart-count">0</span>)</span>
+              </a>
+              <button id="dark-mode-toggle" class="nav-icon dark-mode-toggle">
+                  <i class="fas fa-moon"></i>
+                  <span>Dark Mode</span>
+              </button>
+              <button id="logout-button" class="btn btn-secondary">Chiqish</button>
+          </nav>
+      </div>
+  </header>
+
+  <main class="main-content">
+      <div class="container">
+          <section class="categories">
+              <h2>Kategoriyalar</h2>
+              <div class="category-list">
+                  <button class="category-btn active" data-category="all">Barcha narsalar</button>
+                  <button class="category-btn" data-category="fruits">Mevalar</button>
+                  <button class="category-btn" data-category="food">Taomlar</button>
+                  <button class="category-btn" data-category="clothes">Kiyimlar</button>
+                  <button class="category-btn" data-category="t-shirts">Futbolkalar</button>
+                  <button class="category-btn" data-category="school">Maktab bozorliklar</button>
+                  <button class="category-btn" data-category="shoes">Oyoqkiyimlar</button>
+                  <button class="category-btn" data-category="toys">O'yinchoqlar</button>
+                  <button class="category-btn" data-category="groceries">Oziq-ovqatlar</button>
+                  <button class="category-btn" data-category="pools">Basseynlar</button>
+                  <button class="category-btn" data-category="construction">Qurilish uskunalari</button>
+                  <button class="category-btn" data-category="phones">Telefonlar</button>
+                  <button class="category-btn" data-category="laptops">Noutbuklar</button>
+                  <button class="category-btn" data-category="tvs">Televizorlar</button>
+              </div>
+          </section>
+
+          <section class="parallax-section" style="background-image: url('/placeholder.svg?height=800&width=1600');">
+              <div class="parallax-content">
+                  <h2>Katta Chegirmalar!</h2>
+                  <p>Eng yaxshi takliflarni qo'ldan boy bermang! Faqat shu yerda!</p>
+              </div>
+          </section>
+
+          <section class="products-grid">
+              <h2>Mahsulotlar</h2>
+              <div id="products-container" class="product-list">
+                  <!-- Products will be loaded here by JavaScript -->
+              </div>
+          </section>
+      </div>
+  </main>
+
+  <div id="cart-modal" class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h3>Savatdagi mahsulotlar</h3>
+          <div id="cart-items">
+              <!-- Cart items will be loaded here -->
+          </div>
+          <div class="cart-summary">
+              <p>Jami: <span id="cart-total">0 UZS</span></p>
+              <button class="btn btn-primary">Xaridni yakunlash</button>
+          </div>
+      </div>
+  </div>
+
+  <div id="favorites-modal" class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h3>Sevimlilar</h3>
+          <div id="favorites-items">
+              <!-- Favorites items will be loaded here -->
+          </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
