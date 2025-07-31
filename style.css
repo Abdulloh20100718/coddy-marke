@@ -438,7 +438,7 @@ body.dark-mode .auth-container {
 
 .product-card img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   border-bottom: 1px solid var(--border-color);
   transition: border-color 0.3s ease;

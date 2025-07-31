@@ -497,17 +497,6 @@ const PRODUCTS = [
 
   // Kiyimlar (Clothes) - 25 ta
   {
-    id: "cl1",
-    name: "Yozgi futbolka (erkaklar)",
-    price: 80000,
-    oldPrice: 95000,
-    discount: 15.79,
-    image: "e futbolka.jpg",
-    category: "t-shirts",
-    purchases: 2500,
-    likes: 1200,
-  },
-  {
     id: "cl5",
     name: "Ayollar yubkasi",
     price: 100000,
@@ -586,17 +575,6 @@ const PRODUCTS = [
     category: "clothes",
     purchases: 500,
     likes: 220,
-  },
-  {
-    id: "cl13",
-    name: "Mayka (ayollar)",
-    price: 50000,
-    oldPrice: 58000,
-    discount: 13.79,
-    image: "mayki.webp",
-    category: "t-shirts",
-    purchases: 1500,
-    likes: 700,
   },
   {
     id: "cl14",
@@ -698,17 +676,6 @@ const PRODUCTS = [
     category: "clothes",
     purchases: 550,
     likes: 240,
-  },
-  {
-    id: "cl25",
-    name: "Sport futbolkasi (ayollar)",
-    price: 95000,
-    oldPrice: 110000,
-    discount: 13.64,
-    image: "ayollarniki.webp",
-    category: "t-shirts",
-    purchases: 1800,
-    likes: 850,
   },
 
   // Maktab bozorliklar (School) - 25 ta
